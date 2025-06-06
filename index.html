@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulces Chilis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1> Bienvenidos a Dulces Chilis</h1>
+    <p>"Los mejores dulces picositos y tradicionales"</p>
+    <div style="margin-top: 10px;">
+  <button onclick="document.getElementById('formulario-contacto').scrollIntoView({ behavior: 'smooth' });">
+    Contáctanos
+  </button>
+</div>
+<nav>
+  </header>
+
+  <section class="hero">
+    <h2> Nuestros Dulces</h2>
+  </section>
+
+  <div class="carousel-container">
+    
+    <div class="carousel-track">
+      <div class="producto-card">
+        <img src="img/enchilado.jpg" alt="Dulces enchilados">
+        <h3>Dulces Enchilados</h3>
+        <p class="precio">$50 MXN</p>  
+     <button onclick="mostrarDescripcion('Dulces Enchilados', 'Nuestros dulces enchilados son el antojo perfecto para los amantes del picante. Frutales, ácidos y cubiertos con una capa de chile que te hará salivar desde la primera mordida. ¡Prepárate para enchilarte con sabor!.')">
+    Ver descripción
+  </button>
+
+      </div>
+      <div class="producto-card">
+        <img src="img/gomitas.jpg" alt="Gomitas enchiladas">
+        <h3>Gomitas Enchiladas</h3>
+        <p class="precio">$40 MXN</p>
+        <button onclick="mostrarDescripcion('Gomitas enchiladas', 'Nuestras gomitas con chile combinan lo mejor de dos mundos: el sabor frutal y suave de las gomitas con el toque perfecto de chile en polvo. Una explosión de sabor dulce, ácido y picante que no podrás dejar de probar.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/chicle.jpg" alt="Paletas con chile">
+        <h3>Paletas con Chile</h3>
+        <p class="precio">$15 MXN</p>
+        <button onclick="mostrarDescripcion('Paletas con chicle', 'Disfruta el delicioso sabor de nuestras paletas con chicle con una explosión de sabores frutales por fuera y una sorpresa suave y masticable por dentro. ¡Perfectas para niños y para los que nunca dejan de serlo!.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/aci.jpg" alt="Acidos">
+        <h3>Aciditos</h3>
+        <p class="precio">$30 MXN</p>
+  <button onclick="mostrarDescripcion('Acidos', 'Disfruta nuestros dulces ácidos, cargados de sabor frutal con ese toque intenso y electrizante que encanta. Ideales para los que buscan una experiencia intensa, divertida y totalmente adictiva.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/al.jpg" alt="Alegria">
+        <h3>Alegria</h3>
+        <p class="precio">$10 MXN</p>
+         <button onclick="mostrarDescripcion('Alegrias ','Nuestras alegrías están hechas con amaranto 100% natural y miel, combinando lo mejor de la tradición mexicana con un toque delicioso y nutritivo. Crujientes, dulces y llenas de energía. ¡Un clásico que nunca pasa de moda!.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/bo.jpg" alt="Borrachos">
+        <h3>Borrachos</h3>
+        <p class="precio">$5 MXN</p>
+         <button onclick="mostrarDescripcion('Borracchos','Nuestros borrachitos son suaves, jugosos y llenos de sabor. Hechos con un toque de licor y cubiertos de azúcar, estos dulces típicos son una delicia que combina lo mejor de lo artesanal con un guiño travieso. ¡Un clásico que conquista paladares!.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/co.jpg" alt="Cocada">
+        <h3>Cocada</h3>
+        <p class="precio">$20 MXN</p>
+         <button onclick="mostrarDescripcion('Cocada', 'Nuestras cocadas están elaboradas con coco rallado y un toque de leche y azúcar, logrando una textura suave, jugosa y llena de sabor. Perfectas para los amantes de los dulces típicos con un toque tropical. ¡Una delicia que te lleva directo al paraíso!.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/ja.jpg" alt="Jamoncillo">
+        <h3>Jamoncillo</h3>
+        <p class="precio">$15 MXN</p>
+         <button onclick="mostrarDescripcion('Jamoncillo', 'El jamoncillo es un clásico de la repostería tradicional, hecho con leche, azúcar y un toque de vainilla o nuez. Su textura suave y cremosa lo convierte en un bocado irresistible que evoca recuerdos y sabores de antaño. ¡Un pedacito de México en cada mordida!.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/ma.jp.jpg" alt="Mazapan">
+        <h3>Mazapan</h3>
+        <p class="precio">$14 MXN</p>
+         <button onclick="mostrarDescripcion('Mazapan', 'Nuestro mazapán artesanal está hecho con cacahuate tostado y azúcar, creando una textura suave que se deshace en la boca. Clásico, delicioso y lleno de sabor, es el dulce perfecto para compartir… ¡si no se rompe antes!.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/me.jpg" alt="Merengue">
+        <h3>Merengue</h3>
+        <p class="precio">$25 MXN</p>
+         <button onclick="mostrarDescripcion('Merengue', 'Nuestros merengues son crujientes por fuera y suaves por dentro, elaborados con claras de huevo y azúcar para crear ese toque dulce y aireado que encanta a chicos y grandes. Perfectos para endulzar cualquier momento.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/Ob.jpg" alt="Oblea">
+        <h3>Oblea</h3>
+        <p class="precio">$20 MXN</p>
+         <button onclick="mostrarDescripcion('Oblea', 'Obleas crujientes y deliciosas, hechas con ingredientes seleccionados para ofrecer un sabor dulce y suave. Perfectas para acompañar postres, rellenas con cajeta, dulce de leche, chocolate o tu ingrediente favorito. Ideales para disfrutar en cualquier momento del día como un snack ligero y delicioso.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/pa.jpg" alt="Palanquetas">
+        <h3>Palanquetas</h3>
+        <p class="precio">$15 MXN</p>
+         <button onclick="mostrarDescripcion('Palenquetas', 'Palanquetas artesanales, elaboradas con nueces, semillas y miel natural para ofrecer un snack crujiente, nutritivo y lleno de sabor. Perfectas para quienes buscan un dulce saludable y energético, ideal para llevar a cualquier lugar o disfrutar entre comidas. Su textura y sabor equilibrado hacen que sean irresistibles para toda la familia.')">
+    Ver descripción
+  </button>
+      </div>
+      <div class="producto-card">
+        <img src="img/pul.jpg" alt="Pulparindo">
+        <h3>Pulparindo</h3>
+        <p class="precio">$12 MXN</p>
+         <button onclick="mostrarDescripcion('Pulparindo', 'Pulparindo, el clásico dulce mexicano elaborado con pulpa de tamarindo natural, azúcar y un toque de chile, que combina perfectamente el sabor ácido, dulce y picante. Ideal para los amantes de los sabores intensos y tradicionales, este snack es perfecto para disfrutar en cualquier momento y compartir con amigos y familia.')">
+    Ver descripción
+  </button>
+      </div>
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</div>
+<<section id="formulario-contacto" style="padding: 30px; background-color: #ffe6e6; text-align: center;">
+  <h2>Contáctanos</h2>
+  <form class="formulario-contacto">
+    <div class="inputs-horizontales">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Número de teléfono" required>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; Dulces Chilis.Todos los derechos reservados.</p>
+    <p>&copy; Facebook  dulces chilis.Instagram @dulces chilis. WhatsApp  5556768900 .</p>
+  </footer>
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const cards = document.querySelectorAll('.producto-card');
+    const prevButton = document.querySelector('.carousel-btn.prev');
+    const nextButton = document.querySelector('.carousel-btn.next');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const cardWidth = cards[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    function moveNext() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      updateCarousel();
+    }
+
+    function movePrev() {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateCarousel();
+    }
+
+    nextButton.addEventListener('click', () => {
+      moveNext();
+      resetAutoplay();
+    });
+
+    prevButton.addEventListener('click', () => {
+      movePrev();
+      resetAutoplay();
+    });
+
+    let autoplayInterval = setInterval(moveNext, 2000);
+
+    function resetAutoplay() {
+      clearInterval(autoplayInterval);
+      autoplayInterval = setInterval(moveNext, 2000);
+    }
+
+    window.addEventListener('resize', updateCarousel);
+    window.addEventListener('load', updateCarousel); // asegura que cargue al iniciar
+    function mostrarDescripcion(titulo, descripcion) {
+  document.getElementById('modalTitulo').textContent = titulo;
+  document.getElementById('modalTexto').textContent = descripcion;
+  document.getElementById('modalDescripcion').style.display = 'block';
+}
+  </script>
+ <!-- MODAL -->
+<div id="modalDescripcion" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+     background: rgba(0, 0, 0, 0.6); z-index: 1000; align-items: center; justify-content: center;">
+  <div style="background: rgb(26, 5, 5); padding: 20px; border-radius: 8px; max-width: 400px; text-align: center; position: relative;">
+    <h2 id="modalTitulo"></h2>
+    <p id="modalTexto"></p>
+    <button onclick="cerrarModal()" style="margin-top: 10px;">Cerrar</button>
+  </div>
+</div>
+<script>
+  function mostrarDescripcion(titulo, descripcion) {
+    document.getElementById('modalTitulo').textContent = titulo;
+    document.getElementById('modalTexto').textContent = descripcion;
+    document.getElementById('modalDescripcion').style.display = 'flex';
+  }
+
+  function cerrarModal() {
+    document.getElementById('modalDescripcion').style.display = 'none';
+  }
+</script>
+
+
+</div>
+ 
+</body>
+</html>

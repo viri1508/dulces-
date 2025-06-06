@@ -1,0 +1,159 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(dul.jpg);
+  color: #333;
+}
+
+header {
+background: url(1.jpg) center;
+  padding: 20px;
+  color: rgba(12, 10, 10, 0.966);
+  text-align: center;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0,10);
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: rgba(255 255, 255, 0.966);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #ffcce7;
+  text-align: center;
+  padding: 10px 10px;
+   font-weight: bold;
+}
+
+.carousel-container {
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+ margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100% ;
+}
+
+.producto-card {
+min-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.producto-card img {
+  width: 50%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(254, 254, 254, 0.843);
+  color: rgba(9, 9, 10, 0.582);
+  border: none;
+  font-size: 2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+.carousel-track-container {
+  overflow: hidden;
+}
+
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #563c89;
+  margin: 10% auto;
+  padding: 40px 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 300px;
+  position: relative;
+  text-align: left;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #ff4d4d;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+}
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.inputs-horizontales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.inputs-horizontales input {
+  padding: 10px;
+  width: 250px;
+  max-width: 100%;
+}
+
+.formulario-contacto button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
