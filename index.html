@@ -8,134 +8,164 @@
 </head>
 <body>
   <header>
+    <div class="bienvenida-container">
+  <div class="bienvenida-fondo">
     <h1> Bienvenidos a Dulces Chilis</h1>
     <p>"Los mejores dulces picositos y tradicionales"</p>
-    <div style="margin-top: 10px;">
+  
   <button onclick="document.getElementById('formulario-contacto').scrollIntoView({ behavior: 'smooth' });">
     Contáctanos
   </button>
 </div>
 <nav>
   </header>
-
-  <section class="hero">
-    <h2> Nuestros Dulces</h2>
+<<button onclick="document.getElementById('carrito').style.display = 'block';" class="boton-carrito">
+  🛒 Ver carrito
+</button>
+<section class="seccion-nuestros-dulces">
+  <h2> Nuestros Dulces</h2>
   </section>
 
   <div class="carousel-container">
-    
-    <div class="carousel-track">
+      <div class="carousel-track"> 
       <div class="producto-card">
         <img src="img/enchilado.jpg" alt="Dulces enchilados">
-        <h3>Dulces Enchilados</h3>
-        <p class="precio">$50 MXN</p>  
+        <h3  class="titulo-producto"> Dulces Enchilados</h3>
+        <p class="precio"> $100 MXN</p> 
+         <p class="gramaje"> 1kg  </p> 
+         <div class="poducto-controles"></div>
      <button onclick="mostrarDescripcion('Dulces Enchilados', 'Nuestros dulces enchilados son el antojo perfecto para los amantes del picante. Frutales, ácidos y cubiertos con una capa de chile que te hará salivar desde la primera mordida. ¡Prepárate para enchilarte con sabor!.')">
     Ver descripción
   </button>
-
+<button onclick="agregarAlCarrito('Dulces enchilados', 100)">Agregar al carrito</button>
       </div>
-      <div class="producto-card">
+<div class="producto-card">
         <img src="img/gomitas.jpg" alt="Gomitas enchiladas">
-        <h3>Gomitas Enchiladas</h3>
-        <p class="precio">$40 MXN</p>
+        <h3 class="titulo-producto">Gomitas Enchiladas</h3>
+        <p class="precio">$80 MXN</p>
+        <p class="gramaje"> 1kg</p>
         <button onclick="mostrarDescripcion('Gomitas enchiladas', 'Nuestras gomitas con chile combinan lo mejor de dos mundos: el sabor frutal y suave de las gomitas con el toque perfecto de chile en polvo. Una explosión de sabor dulce, ácido y picante que no podrás dejar de probar.')">
     Ver descripción
   </button>
+<button onclick="agregarAlCarrito('Gomitas enchiladas', 80)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/chicle.jpg" alt="Paletas con chile">
-        <h3>Paletas con Chile</h3>
-        <p class="precio">$15 MXN</p>
+        <h3 class="titulo-producto">Paletas con Chile</h3>
+        <p class="precio">$5 MXN</p>
+        <p class="gramaje" > 1pz </p>
         <button onclick="mostrarDescripcion('Paletas con chicle', 'Disfruta el delicioso sabor de nuestras paletas con chicle con una explosión de sabores frutales por fuera y una sorpresa suave y masticable por dentro. ¡Perfectas para niños y para los que nunca dejan de serlo!.')">
     Ver descripción
   </button>
+<button onclick="agregarAlCarrito('Paletas con chicle', 5)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/aci.jpg" alt="Acidos">
-        <h3>Aciditos</h3>
-        <p class="precio">$30 MXN</p>
+        <h3 class="titulo-producto">Aciditos</h3>
+        <p class="precio">$2.50 MXN</p>
+       <p class="gramaje">1pz</p>
   <button onclick="mostrarDescripcion('Acidos', 'Disfruta nuestros dulces ácidos, cargados de sabor frutal con ese toque intenso y electrizante que encanta. Ideales para los que buscan una experiencia intensa, divertida y totalmente adictiva.')">
     Ver descripción
   </button>
+  <button onclick="agregarAlCarrito('Acidos', 2.50)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/al.jpg" alt="Alegria">
-        <h3>Alegria</h3>
+        <h3 class="titulo-producto">Alegria</h3>
         <p class="precio">$10 MXN</p>
+        <p class="gramaje">1pz</p>
          <button onclick="mostrarDescripcion('Alegrias ','Nuestras alegrías están hechas con amaranto 100% natural y miel, combinando lo mejor de la tradición mexicana con un toque delicioso y nutritivo. Crujientes, dulces y llenas de energía. ¡Un clásico que nunca pasa de moda!.')">
     Ver descripción
   </button>
+   <button onclick="agregarAlCarrito('Alegrias', 10)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/bo.jpg" alt="Borrachos">
-        <h3>Borrachos</h3>
+        <h3 class="titulo-producto">Borrachos</h3>
         <p class="precio">$5 MXN</p>
-         <button onclick="mostrarDescripcion('Borracchos','Nuestros borrachitos son suaves, jugosos y llenos de sabor. Hechos con un toque de licor y cubiertos de azúcar, estos dulces típicos son una delicia que combina lo mejor de lo artesanal con un guiño travieso. ¡Un clásico que conquista paladares!.')">
+        <p class="gramaje"> 1pz </p>
+         <button onclick="mostrarDescripcion('Borrachos','Nuestros borrachitos son suaves, jugosos y llenos de sabor. Hechos con un toque de licor y cubiertos de azúcar, estos dulces típicos son una delicia que combina lo mejor de lo artesanal con un guiño travieso. ¡Un clásico que conquista paladares!.')">
     Ver descripción
   </button>
+   <button onclick="agregarAlCarrito('Borrachos', 5)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/co.jpg" alt="Cocada">
-        <h3>Cocada</h3>
-        <p class="precio">$20 MXN</p>
+        <h3 class="titulo-producto">Cocada</h3>
+        <p class="precio">$2.50 MXN</p>
+        <p class="gramaje"> 1pz </p>
          <button onclick="mostrarDescripcion('Cocada', 'Nuestras cocadas están elaboradas con coco rallado y un toque de leche y azúcar, logrando una textura suave, jugosa y llena de sabor. Perfectas para los amantes de los dulces típicos con un toque tropical. ¡Una delicia que te lleva directo al paraíso!.')">
     Ver descripción
   </button>
+   <button onclick="agregarAlCarrito('Cocada', 2.50)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/ja.jpg" alt="Jamoncillo">
-        <h3>Jamoncillo</h3>
-        <p class="precio">$15 MXN</p>
+        <h3 class="titulo-producto">Jamoncillo</h3>
+        <p class="precio">$6 MXN</p>
+        <p class="gramaje"> 1pz </p>
          <button onclick="mostrarDescripcion('Jamoncillo', 'El jamoncillo es un clásico de la repostería tradicional, hecho con leche, azúcar y un toque de vainilla o nuez. Su textura suave y cremosa lo convierte en un bocado irresistible que evoca recuerdos y sabores de antaño. ¡Un pedacito de México en cada mordida!.')">
     Ver descripción
   </button>
+   <button onclick="agregarAlCarrito('Jamoncillo', 6)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/ma.jp.jpg" alt="Mazapan">
-        <h3>Mazapan</h3>
-        <p class="precio">$14 MXN</p>
-         <button onclick="mostrarDescripcion('Mazapan', 'Nuestro mazapán artesanal está hecho con cacahuate tostado y azúcar, creando una textura suave que se deshace en la boca. Clásico, delicioso y lleno de sabor, es el dulce perfecto para compartir… ¡si no se rompe antes!.')">
+        <h3 class="titulo-producto">Mazapan</h3>
+        <p class="precio">$7 MXN</p>
+        <p class="gramaje"> 1pz</p>
+         <button onclick="mostrarDescripcion('Mazapan', 'Mazapán  hecho con cacahuate tostado y azúcar, creando una textura suave que se deshace en la boca. Clásico, delicioso y lleno de sabor, es el dulce perfecto para compartir… ¡si no se rompe antes!.')">
     Ver descripción
   </button>
+     <button onclick="agregarAlCarrito('Mazapan', 7)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/me.jpg" alt="Merengue">
-        <h3>Merengue</h3>
-        <p class="precio">$25 MXN</p>
+        <h3 class="titulo-producto">Merengue</h3>
+        <p class="precio">$10 MXN</p>
+        <p class="gramaje">1pz</p>
          <button onclick="mostrarDescripcion('Merengue', 'Nuestros merengues son crujientes por fuera y suaves por dentro, elaborados con claras de huevo y azúcar para crear ese toque dulce y aireado que encanta a chicos y grandes. Perfectos para endulzar cualquier momento.')">
     Ver descripción
   </button>
+     <button onclick="agregarAlCarrito('Merengue',10 )">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/Ob.jpg" alt="Oblea">
-        <h3>Oblea</h3>
-        <p class="precio">$20 MXN</p>
+        <h3 class="titulo-producto">Oblea</h3>
+        <p class="precio">$15 MXN</p>
+        <p class="gramaje"> 1pz </p>
          <button onclick="mostrarDescripcion('Oblea', 'Obleas crujientes y deliciosas, hechas con ingredientes seleccionados para ofrecer un sabor dulce y suave. Perfectas para acompañar postres, rellenas con cajeta, dulce de leche, chocolate o tu ingrediente favorito. Ideales para disfrutar en cualquier momento del día como un snack ligero y delicioso.')">
     Ver descripción
   </button>
+     <button onclick="agregarAlCarrito('Oblea', 15)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/pa.jpg" alt="Palanquetas">
-        <h3>Palanquetas</h3>
-        <p class="precio">$15 MXN</p>
+        <h3 class="titulo-producto">Palanquetas</h3>
+        <p class="precio">$20 MXN</p>
+        <p class="gramaje">1pz</p>
          <button onclick="mostrarDescripcion('Palenquetas', 'Palanquetas artesanales, elaboradas con nueces, semillas y miel natural para ofrecer un snack crujiente, nutritivo y lleno de sabor. Perfectas para quienes buscan un dulce saludable y energético, ideal para llevar a cualquier lugar o disfrutar entre comidas. Su textura y sabor equilibrado hacen que sean irresistibles para toda la familia.')">
     Ver descripción
   </button>
+     <button onclick="agregarAlCarrito('Palanquetas', 20)">Agregar al carrito</button>
       </div>
       <div class="producto-card">
         <img src="img/pul.jpg" alt="Pulparindo">
-        <h3>Pulparindo</h3>
+        <h3 class="titulo-producto">Pulparindo</h3>
         <p class="precio">$12 MXN</p>
+        <p class="gramaje">1pz</p>
          <button onclick="mostrarDescripcion('Pulparindo', 'Pulparindo, el clásico dulce mexicano elaborado con pulpa de tamarindo natural, azúcar y un toque de chile, que combina perfectamente el sabor ácido, dulce y picante. Ideal para los amantes de los sabores intensos y tradicionales, este snack es perfecto para disfrutar en cualquier momento y compartir con amigos y familia.')">
     Ver descripción
   </button>
+     <button onclick="agregarAlCarrito('Pulparindo', 12)">Agregar al carrito</button>
       </div>
     </div>
     <button class="carousel-btn prev">&#10094;</button>
     <button class="carousel-btn next">&#10095;</button>
   </div>
 </div>
-<<section id="formulario-contacto" style="padding: 30px; background-color: #ffe6e6; text-align: center;">
+
+<<section id="formulario-contacto" style="padding: 40px; background-color: #ffe6e6; text-align: center;">
   <h2>Contáctanos</h2>
   <form class="formulario-contacto">
     <div class="inputs-horizontales">
@@ -201,7 +231,7 @@
  <!-- MODAL -->
 <div id="modalDescripcion" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
      background: rgba(0, 0, 0, 0.6); z-index: 1000; align-items: center; justify-content: center;">
-  <div style="background: rgb(255, 251, 251); padding: 20px; border-radius: 8px; max-width: 400px; text-align: center; position: relative;">
+  <div style="background: rgb(255, 254, 254); padding: 20px; border-radius: 8px; max-width: 400px; text-align: center; position: relative;">
     <h2 id="modalTitulo"></h2>
     <p id="modalTexto"></p>
     <button onclick="cerrarModal()" style="margin-top: 10px;">Cerrar</button>
@@ -218,9 +248,160 @@
     document.getElementById('modalDescripcion').style.display = 'none';
   }
 </script>
-
-
 </div>
- 
+<!-- Carrito flotante -->
+<div id="carrito" style="position: fixed; bottom: 0; right: 0; background: #fff; border: 1px solid #ccc; padding: 15px; width: 300px; max-height: 400px; overflow-y: auto; display: none; z-index: 1001;">
+  <h3>Carrito de compras</h3>
+  <ul id="listaCarrito" style="list-style: none; padding-left: 0;"></ul>
+  <p>Total: $<span id="totalCarrito">0</span> MXN</p>
+
+  <label>
+    <input type="checkbox" id="captchaCheck"> No soy un robot
+  </label><br><br>
+
+  <button onclick="procesarCompra()">Comprar</button>
+  <button onclick="cerrarCarrito()" style="margin-top: 5px;">Cerrar</button>
+</div>
+<script>
+  // ... ya tienes funciones como mostrarDescripcion y cerrarModal
+
+  let carrito = [];
+  let total = 0;
+  function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    total += precio;
+    actualizarCarrito();
+    document.getElementById('carrito').style.display = 'block';
+  }
+
+  function actualizarCarrito() {
+    const lista = document.getElementById('listaCarrito');
+    const totalEl = document.getElementById('totalCarrito');
+    lista.innerHTML = '';
+
+    carrito.forEach((item) => {
+      const li = document.createElement('li');
+      li.textContent = `${item.nombre} - $${item.precio} MXN`;
+      lista.appendChild(li);
+    });
+
+    totalEl.textContent = total;
+  }
+
+  function cerrarCarrito() {
+    document.getElementById('carrito').style.display = 'none';
+  }
+  
+  function procesarCompra() {
+    const captcha = document.getElementById('captchaCheck');
+
+    if (!captcha.checked) {
+      alert('Por favor confirma que no eres un robot.');
+      return;
+    }
+
+    if (carrito.length === 0) {
+      alert('El carrito está vacío.');
+      return;
+    }
+    document.getElementById('formularioPago').style.display = 'block';
+    carrito = [];
+    total = 0;
+    actualizarCarrito();
+    document.getElementById('captchaCheck').checked = false;
+    cerrarCarrito();
+  }
+</script>
+<div id="formularioPago" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+     background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3); z-index: 1002;">
+  <h3>Detalles de Pago</h3>
+  <form onsubmit="enviarPago(event)">
+    <label>Nombre del titular:</label><br>
+    <input type="text" id="nombreTitular" required><br><br>
+
+    <label>Número de tarjeta:</label><br>
+    <input type="text" id="numeroTarjeta" maxlength="16" pattern="\d{16}" required><br><br>
+
+    <label>Fecha de expiración:</label><br>
+    <input type="month" id="fechaExpiracion" required><br><br>
+
+    <label>CVV:</label><br>
+    <input type="text" id="cvv" maxlength="3" pattern="\d{3}" required><br><br>
+
+    <!-- CAMPOS NUEVOS -->
+    <label>Nombre del comprador:</label><br>
+    <input type="text" id="nombreComprador" required><br><br>
+
+    <label>Dirección:</label><br>
+    <input type="text" id="direccion" required><br><br>
+
+    <label>Referencias:</label><br>
+    <input type="text" id="referencias"><br><br>
+
+    <label>Número telefónico:</label><br>
+    <input type="tel" id="telefono" pattern="[0-9]{10}" required><br><br>
+    <!-- FIN CAMPOS NUEVOS -->
+
+    <button type="submit">Pagar</button>
+    <button type="button" onclick="document.getElementById('formularioPago').style.display='none';">Cancelar</button>
+  </form>
+</div>
+<script>
+  function enviarPago(event) {
+    event.preventDefault(); // Evita el envío del formulario
+     const mensaje = document.getElementById("mensajeExito");
+  mensaje.style.display = "block";
+  mensaje.style.opacity = "1";
+   setTimeout(() => {
+    mensaje.style.opacity = "0";
+    setTimeout(() => {
+      mensaje.style.display = "none";
+    }, 200); // Esperar a que termine la transición
+  }, 2000);
+
+    // Limpiar los campos del formulario
+    document.getElementById("nombreTitular").value = "";
+    document.getElementById("numeroTarjeta").value = "";
+    document.getElementById("fechaExpiracion").value = "";
+    document.getElementById("cvv").value = "";
+    document.getElementById("nombreComprador").value = "";
+    document.getElementById("direccion").value = "";
+    document.getElementById("referencias").value = "";
+    document.getElementById("telefono").value = "";
+
+    // Ocultar el formulario si quieres
+    document.getElementById("formularioPago").style.display = "none";
+  }
+</script>
+<div id="mensajeExito" style="
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 2000;
+  transition: opacity 0.3s ease;">
+<div id="mensajeError" style="display: none; background-color: #f44336; color: white; padding: 10px;">
+  Saldo insuficiente. No se pudo procesar el pago.
+</div>
+<script>
+  // Simula el saldo disponible y el total a pagar
+  let saldoTarjeta = 0; // ejemplo: sin dinero
+  let totalCompra = 50;
+
+  if (saldoTarjeta >= totalCompra) {
+    document.getElementById('mensajeExito').style.display = 'block';
+  } else {
+    document.getElementById('mensajeError').style.display = 'block';
+  }
+  
+</script>
+</div>
+
+
 </body>
 </html>
